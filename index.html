@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Processing Journey - Calum Kerr</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Noto Sans', sans-serif; 
+            color: #000;
+            background: #fff;
+            letter-spacing: 0.03em;
+        }
+        .section { 
+            padding: 8rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        .section-title { 
+            margin-bottom: 4rem;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            text-align: center;
+        }
+        .timeline-item {
+            border-left: 1px solid #000;
+            padding: 3rem;
+            margin-bottom: 4rem;
+            position: relative;
+            background: #fff;
+            transition: all 0.3s ease;
+        }
+        .timeline-item:hover {
+            background: #f9f9f9;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -4px;
+            top: 3rem;
+            width: 7px;
+            height: 7px;
+            background: #000;
+        }
+        .project-tech {
+            display: inline-block;
+            padding: 0.25rem 1rem;
+            margin: 0.25rem;
+            border: 1px solid #000;
+            font-size: 0.75rem;
+            letter-spacing: 0.1em;
+        }
+        .hero-section {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: #fff;
+            padding: 2rem;
+        }
+        .navbar {
+            background: transparent !important;
+            padding: 2rem 0;
+        }
+        .navbar-brand {
+            font-weight: 300;
+            letter-spacing: 0.2em;
+        }
+        .nav-link {
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 0.9rem;
+        }
+        .btn-outline-dark {
+            border-width: 1px;
+            border-radius: 0;
+            padding: 0.75rem 2rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 0.8rem;
+        }
+        h3 {
+            font-weight: 300;
+            letter-spacing: 0.1em;
+            margin-bottom: 1.5rem;
+        }
+        .lead {
+            font-weight: 300;
+            line-height: 1.8;
+        }
+        .philosophy-card {
+            padding: 3rem;
+            text-align: center;
+            background: #fff;
+            margin-bottom: 2rem;
+        }
+        .philosophy-card h4 {
+            font-weight: 300;
+            letter-spacing: 0.1em;
+            margin: 1.5rem 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">PDF PROCESSING</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="display-4 mb-5" style="font-weight: 300; letter-spacing: 0.2em;">PDF Processing Evolution</h1>
+            <p class="lead mb-5" style="max-width: 600px; margin: 0 auto;">A minimalist approach to web development and PDF processing technologies</p>
+            <a href="#timeline" class="btn btn-outline-dark">View Projects</a>
+        </div>
+    </section>
+
+    <!-- Project Timeline -->
+    <section id="timeline" class="section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="timeline">
+                <!-- RevisePDF.com -->
+                <div class="timeline-item">
+                    <h3>RevisePDF.com</h3>
+                    <p class="text-muted">Current Flagship Project</p>
+                    <p class="lead">A comprehensive PDF processing platform built with modern web technologies and optimized user experience.</p>
+                    
+                    <h5 class="mt-4">Key Features</h5>
+                    <ul>
+                        <li>Advanced PDF manipulation using PyMuPDF</li>
+                        <li>Server-side processing with Flask and Python</li>
+                        <li>Optimized templating for better SEO performance</li>
+                        <li>Secure file handling and processing</li>
+                        <li>Responsive design for all devices</li>
+                    </ul>
+
+                    <h5 class="mt-4">Technical Stack</h5>
+                    <div class="mt-2">
+                        <span class="project-tech">Python</span>
+                        <span class="project-tech">Flask</span>
+                        <span class="project-tech">PyMuPDF</span>
+                        <span class="project-tech">Bootstrap</span>
+                        <span class="project-tech">Heroku</span>
+                    </div>
+
+                    <div class="mt-4">
+                        <a href="https://www.revisepdf.com" target="_blank" class="btn btn-outline-dark">Visit Website</a>
+                    </div>
+                </div>
+
+                <!-- SnackPDF.com -->
+                <div class="timeline-item">
+                    <h3>SnackPDF.com</h3>
+                    <p class="text-muted">Learning Project</p>
+                    <p>The project that started it all. A practical exploration into PDF processing on the web.</p>
+                    
+                    <h5 class="mt-4">Key Learnings</h5>
+                    <ul>
+                        <li>Understanding PDF structure and manipulation</li>
+                        <li>Server resource management</li>
+                        <li>User experience optimization</li>
+                        <li>Performance bottleneck identification</li>
+                    </ul>
+
+                    <div class="mt-4">
+                        <a href="https://snackpdf.com" target="_blank" class="btn btn-outline-dark">View Project</a>
+                    </div>
+                </div>
+
+                <!-- RevisePDFEditor.com -->
+                <div class="timeline-item">
+                    <h3>RevisePDFEditor.com</h3>
+                    <p class="text-muted">Future Development</p>
+                    <p>The next evolution in PDF processing, focusing on advanced editing capabilities.</p>
+                    
+                    <h5 class="mt-4">Planned Features</h5>
+                    <ul>
+                        <li>Real-time PDF editing</li>
+                        <li>Advanced annotation tools</li>
+                        <li>Collaborative editing features</li>
+                        <li>Enhanced user interface</li>
+                    </ul>
+
+                    <p class="mt-4"><em>Coming Soon</em></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Development Philosophy -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Philosophy</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="philosophy-card">
+                        <h4>Learn</h4>
+                        <p>Building upon experience, refining through iteration.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="philosophy-card">
+                        <h4>Simplify</h4>
+                        <p>Creating intuitive interfaces through mindful design.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="philosophy-card">
+                        <h4>Evolve</h4>
+                        <p>Constantly exploring new possibilities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
